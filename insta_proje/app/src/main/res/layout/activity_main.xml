@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beyaz"
+    >
+
+
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:layout_above="@+id/bottom_tab_layout"
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+ 
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/login_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+
+
+    <View
+        android:id="@+id/view_botton_tab"
+        android:visibility="gone"
+        android:layout_above="@+id/bottom_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bottom_shadow" />
+
+
+    <android.support.design.widget.TabLayout
+        android:visibility="gone"
+        android:id="@+id/bottom_tab_layout"
+        style="@style/BottomTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gri" />
+
+</RelativeLayout>

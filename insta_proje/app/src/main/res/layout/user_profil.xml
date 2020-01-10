@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:background="@color/beyaz"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <android.support.v7.widget.Toolbar
+                app:contentInsetStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/geri"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_back"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:id="@+id/profilkullaniciadi"
+                        android:textColor="@color/siyah"
+                        android:layout_toRightOf="@+id/geri"
+                        android:layout_marginLeft="15dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="17dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/ayarlar"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_more"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:background="@drawable/profil_yuvarlak"
+                android:id="@+id/profilresim"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#999999"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/profilresim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <GridLayout
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/gridlayout"
+                    android:rowCount="2"
+                    android:columnCount="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/gonderi_sayisi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/siyah"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/takipci_sayisi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/siyah"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/takip_sayisi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/siyah"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="@color/siyah"
+                        android:text="Gönderiler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="@color/siyah"
+                        android:text="Takipçi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:textColor="@color/siyah"
+                        android:text="Takip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </GridLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/profilismi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilresim"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/siyah"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/bio"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/siyah"
+                android:textSize="15dp"
+                android:layout_below="@+id/profilismi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:textColor="@color/beyaz"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bio"
+                android:id="@+id/takipet"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:text="Takip Et"
+                android:background="@drawable/ileriaktif"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb"
+            android:layout_below="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view"
+            android:id="@+id/ortanokta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:tint="@color/gri2"
+            android:layout_below="@+id/view"
+            android:id="@+id/grid"
+            android:layout_marginRight="80dp"
+            android:layout_toLeftOf="@+id/ortanokta"
+            android:src="@drawable/ic_grid"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+
+        <ImageView
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+            android:tint="@color/gri2"
+            android:id="@+id/assigment"
+            android:layout_toRightOf="@+id/ortanokta"
+            android:src="@drawable/ic_assignment"
+            android:layout_marginLeft="80dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="10dp"
+            android:background="#dbdbdb"
+            android:layout_below="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <FrameLayout
+            android:layout_marginBottom="55dp"
+            android:id="@+id/profil_frame"
+            android:layout_below="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

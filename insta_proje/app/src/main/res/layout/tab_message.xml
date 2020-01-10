@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:algolia="http://schemas.android.com/tools"
+    android:background="@color/beyaz"
+    android:orientation="vertical">
+
+
+    <com.algolia.instantsearch.ui.views.SearchBox
+        android:id="@+id/search_edit_frame2"
+        android:layout_width="match_parent"
+        app:defaultQueryHint="Ara"
+        android:layout_height="wrap_content">
+
+    </com.algolia.instantsearch.ui.views.SearchBox>
+
+    <com.algolia.instantsearch.ui.views.Hits
+        android:id="@+id/hits"
+        app:itemLayout="@layout/hits_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.algolia.instantsearch.ui.views.Hits>
+
+
+
+
+</LinearLayout>

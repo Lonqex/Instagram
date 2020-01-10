@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/beyaz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/instagramlogo"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/instagram_logo2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:layout_marginTop="0dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/siyah"
+        android:background="@drawable/giris"
+        android:padding="17dp"
+        android:textColorHint="@color/koyugri"
+        android:id="@+id/kullanici_adi"
+        android:textSize="14dp"
+        android:hint="Telefon numarası, e-posta adresi veya kullanıcı adı"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/instagramlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textColor="@color/siyah"
+        android:background="@drawable/giris"
+        android:padding="17dp"
+        android:textColorHint="@color/koyugri"
+        android:id="@+id/kullanici_sifre"
+        android:textSize="14dp"
+        android:hint="Şifre"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/kullanici_adi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:elevation="0dp"
+        android:id="@+id/girisyap"
+        android:textColor="@color/beyaz"
+        android:text="Giriş Yap"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:background="@drawable/ileriaktif"
+        android:layout_below="@id/kullanici_sifre"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/gri3"
+        android:id="@+id/girisdetayunuttunmu"
+        android:textSize="12dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/girisyap"
+        android:text="Giriş deyatlarını unuttun mu?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_toRightOf="@id/girisdetayunuttunmu"
+        android:id="@+id/girişyardimal"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/koyulacivert"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/girisyap"
+        android:text="Giriş yapmak için yardım al."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:elevation="0dp"
+        android:id="@+id/facegirisyap"
+        android:textColor="@color/beyaz"
+        android:text=" @sefaciin olarak giriş yap"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="false"
+        android:background="@drawable/ileriaktif"
+        android:layout_below="@id/girisdetayunuttunmu"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/cizgisol"
+        android:layout_marginTop="20dp"
+        android:background="@color/gri2"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/facegirisyap"
+        android:layout_marginLeft="30dp"
+        android:layout_width="145dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_toRightOf="@id/cizgisol"
+        android:id="@+id/yada"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gri3"
+        android:layout_below="@+id/facegirisyap"
+        android:layout_marginLeft="10dp"
+        android:text="YA DA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_toRightOf="@+id/yada"
+        android:id="@+id/cizgisag"
+        android:layout_marginTop="20dp"
+        android:background="@color/gri2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/facegirisyap"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:textColor="@color/gri3"
+        android:id="@+id/hesabınyokmu"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/yada"
+        android:layout_marginLeft="140dp"
+        android:text="Hesabın yok mu?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/hesabınyokmu"
+        android:id="@+id/kaydol"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/koyulacivert"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/yada"
+        android:layout_centerHorizontal="true"
+        android:text="Kaydol."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+
+        android:background="@color/gri2"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/girisenaltyazi"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:textColor="@color/gri3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/girisenaltyazi"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Instagram from Facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

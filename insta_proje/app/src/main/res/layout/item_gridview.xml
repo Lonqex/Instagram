@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_gridview"
+        android:background="@color/beyaz"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/text"
+            android:textSize="15dp"
+            android:textColor="@color/siyah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_below="@+id/toolbar_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:maxHeight="400dp"
+            android:adjustViewBounds="true"
+            android:id="@+id/gonderiimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.github.kshitij_jain.instalike.InstaLikeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:likeColor="@color/beyaz"
+            app:likeSize="60dp"
+            app:likeSrc="@drawable/likered"
+            android:id="@+id/insta_like_view"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_below="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.f22labs.instalikefragmenttransaction.Adapter.Image
+            android:id="@+id/begen"
+            android:layout_centerVertical="true"
+            android:src="@drawable/like"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <com.f22labs.instalikefragmenttransaction.Adapter.Image
+
+            android:id="@+id/yorum"
+            android:layout_toRightOf="@+id/begen"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chat"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <com.f22labs.instalikefragmenttransaction.Adapter.Image
+            android:layout_toRightOf="@+id/yorum"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ss"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <com.f22labs.instalikefragmenttransaction.Adapter.Image
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_kaydet"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/ln1"
+        android:layout_below="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/like2"
+            android:layout_width="13dp"
+            android:layout_height="13dp"/>
+
+        <TextView
+            android:id="@+id/begenmesayisi"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/siyah"
+            android:textSize="13dp"
+            android:layout_gravity="center"
+            android:text="10 beğenme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

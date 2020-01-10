@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/adsifre"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/siyah"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="AD VE ŞİFRE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/siyah"
+        android:background="@drawable/giris"
+        android:padding="20dp"
+        android:textColorHint="@color/koyugri"
+        android:id="@+id/adsoyad"
+        android:textSize="12dp"
+        android:hint="Adın ve soyadın"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/adsifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textColor="@color/siyah"
+        android:background="@drawable/giris"
+        android:padding="20dp"
+        android:textColorHint="@color/koyugri"
+        android:id="@+id/kadi"
+        android:textSize="12dp"
+        android:hint="Kullanıcı Adı"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/adsoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:textColor="@color/siyah"
+        android:background="@drawable/giris"
+        android:padding="20dp"
+        android:textColorHint="@color/koyugri"
+        android:id="@+id/adsoyadsifre"
+        android:textSize="12dp"
+        android:hint="Şifre"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/kadi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:buttonTint="@color/mavi"
+        android:textSize="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/adsoyadsifre"
+        android:checked="true"
+        android:textColor="@color/gri3"
+        android:text="Save Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:textAllCaps="false"
+        android:elevation="0dp"
+        android:enabled="false"
+        android:id="@+id/devamet"
+        android:textColor="@color/beyaz"
+        android:text="Devam Et ve Kişileri Senkronize Et"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ileri"
+        android:layout_below="@id/checkbox"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/mavi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/devamet"
+        android:textSize="15dp"
+        android:text="Kişileri Senkronize Etmeden Devam Et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textSize="12dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Senin ve başkalarının arkadaşlarınızı bulmanıza ve size daha iyi bir hizmet sunmamıza yardımcı olması için rehberindeki kişiler düzenli olarak senkronize edilecek ve Instagram sunucularında saklanacak. Rehberindeki kişileri kaldırmak için Ayarlar'a gir ve bağlantıyı kes."
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/gri3"
+        android:textStyle="bold"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="19dp"
+        android:text="Daha Fazla Bilgi Al."
+        android:textSize="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

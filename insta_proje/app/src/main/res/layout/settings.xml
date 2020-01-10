@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/ayarlartoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:contentInsetStart="0dp"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/siyah"
+                android:textSize="17dp"
+                android:text="Ayarlar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ayarlararama"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="Ara"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ayarlartoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_person_add"
+        android:id="@+id/ardaslarinitakipet"
+        android:textColor="#272727"
+        android:text="Arkadaşlarını Takip Et ve Davet Et"
+        android:layout_below="@+id/ayarlararama"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/ic_notifications"
+        android:id="@+id/Bildirimler"
+        android:textColor="#272727"
+        android:text="Bildirimler"
+        android:layout_below="@+id/ardaslarinitakipet"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/Gizlilik"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/Bildirimler"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:textColor="#272727"
+        android:text="Hesap Gizliliği"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Switch
+        android:id="@+id/kilit"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/megaphone"
+        android:id="@+id/Reklamlar"
+        android:textColor="#272727"
+        android:text="Reklamlar"
+        android:layout_below="@+id/Gizlilik"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/account"
+        android:id="@+id/Hesap"
+        android:textColor="#272727"
+        android:text="Hesap"
+        android:layout_below="@+id/Reklamlar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/ic_help"
+        android:id="@+id/Yardım"
+        android:textColor="#272727"
+        android:text="Yardım"
+        android:layout_below="@+id/Hesap"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/ic_info"
+        android:id="@+id/Hakkında"
+        android:textColor="#272727"
+        android:text="Hakkında"
+        android:layout_below="@+id/Yardım"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="17dp"
+        android:id="@+id/Girisler"
+        android:textColor="#272727"
+        android:textStyle="bold"
+        android:text="Girişler"
+        android:layout_below="@+id/Hakkında"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/Cokluhesap"
+        android:textColor="@color/mavi"
+        android:text="Çoklu Hesap Girinişi Ayarla"
+        android:layout_below="@+id/Girisler"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:id="@+id/Hesapekle"
+        android:textColor="@color/mavi"
+        android:text="Hesap Ekle"
+        android:layout_below="@+id/Cokluhesap"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:id="@+id/Cikisyap"
+        android:textColor="@color/mavi"
+        android:text="sefaciin'dan Çıkış Yap"
+        android:layout_below="@+id/Hesapekle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:textSize="15dp"
+        android:id="@+id/TumHesaplar"
+        android:textColor="@color/mavi"
+        android:text="Tüm Hesaplardan Çıkış Yap"
+        android:layout_below="@+id/Cikisyap"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

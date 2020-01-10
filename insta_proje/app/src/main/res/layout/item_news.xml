@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:background="@color/beyaz"
+    android:layout_height="wrap_content">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/image2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/onayla"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/siyah"
+        android:id="@+id/kadi2"
+        android:textSize="13dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/onayla"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textSize="15dp"
+        android:text="Onayla"
+        android:backgroundTint="@color/mavi"
+        android:textColor="@color/beyaz"
+        android:background="@drawable/textview_black"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
